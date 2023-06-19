@@ -1,0 +1,32 @@
+@media screen and (max-width: 768px) {
+  /*********************** Header and Navbar  ************************/
+
+  .header-container {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  #logo {
+    width: 110px;
+    margin: 15px auto;
+    padding-left: 30px;
+  }
+  #nav-container {
+    position: relative;
+    right: 0;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+  }
+  a {
+    padding-bottom: 13px;
+    margin: 0;
+    width: 100%;
+    border-bottom: solid var(--gray) 2px;
+  }
+  a:hover {
+    color: var(--blue);
+    border-top: none;
+    border-bottom: solid var(--blue) 3px;
+  }
+}
