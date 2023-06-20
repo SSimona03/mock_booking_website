@@ -1,8 +1,20 @@
 @media screen and (max-width: 992px) {
+  /******************************** Header and Navbar  *********************************/
+  .header-container {
+  }
   /********************************** Content *******************************************/
   .content {
     background-color: pink;
   }
 
   /********************************* Footer **********************************************/
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .footer-col {
+  }
+  .footer-col > a {
+    font-size: 15px;
+  }
 }

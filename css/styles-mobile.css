@@ -31,8 +31,21 @@
 
   /*************************************** Content *******************************************/
   .content {
-    background-color: pink;
+    background-color: rgb(187, 187, 164);
   }
 
   /*************************************** Footer *********************************************/
+  footer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .footer-col {
+    all: unset;
+    padding: 13px 11px;
+  }
+  .footer-col > a {
+    font-size: 15px;
+  }
 }
