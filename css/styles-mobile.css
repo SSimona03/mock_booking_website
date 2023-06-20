@@ -1,6 +1,5 @@
 @media screen and (max-width: 768px) {
-  /*********************** Header and Navbar  ************************/
-
+  /******************************** Header and Navbar  *********************************/
   .header-container {
     flex-direction: column;
     margin: 0;
@@ -18,15 +17,22 @@
     justify-content: space-around;
     padding: 0;
   }
-  a {
+  #nav-container > a {
     padding-bottom: 13px;
     margin: 0;
     width: 100%;
     border-bottom: solid var(--gray) 2px;
   }
-  a:hover {
+  #nav-container > a:hover {
     color: var(--blue);
     border-top: none;
     border-bottom: solid var(--blue) 3px;
   }
+
+  /*************************************** Content *******************************************/
+  .content {
+    background-color: pink;
+  }
+
+  /*************************************** Footer *********************************************/
 }

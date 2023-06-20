@@ -8,14 +8,20 @@
   --blue: #0065fc;
   --light-blue: #deebff;
   --gray: #f2f2f2;
+  --footer-h-desktop: 150px;
 }
 
 body {
+  position: relative;
   font-family: "Raleway", sans-serif;
   color: black;
+  height: 100vh;
+  max-height: 100%;
+  width: 100vw;
+  max-width: 100%;
 }
 
-/*********************** Header and Navbar ************************/
+/************************************ Header and Navbar **********************************************/
 
 .header-container {
   position: relative;
@@ -23,9 +29,9 @@ body {
 }
 
 #logo {
-  width: 120px;
+  width: 100px;
   height: 100%;
-  margin: 20px 0 auto 40px;
+  margin: 15px 0 auto 40px;
 }
 
 #nav-container {
@@ -37,9 +43,7 @@ body {
   height: 100%;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+#nav-container > a {
   padding: 0 12px;
   height: 100%;
   display: flex;
@@ -50,7 +54,48 @@ a {
 a:visited {
   text-decoration: none;
 }
-a:hover {
+a {
+  text-decoration: none;
+  color: inherit;
+}
+#nav-container > a:hover {
   color: var(--blue);
   border-top: solid var(--blue) 3px;
+}
+
+/************************************ Content *******************************************/
+.content {
+  overflow: scroll;
+  height: calc(100% - var(--footer-h-desktop));
+}
+
+/************************************ Footer *********************************************/
+
+footer {
+  background-color: var(--gray);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: var(--footer-h-desktop);
+  background: var(--gray);
+  font-size: 12px;
+  display: inline-flex;
+  padding: 25px 40px;
+  text-align: left;
+}
+.footer-col > a {
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  font-size: 13px;
+}
+.footer-under-links {
+  opacity: 0.8;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  line-height: 25px;
+}
+
+.footer-col-second {
+  margin: 0 15%;
 }
