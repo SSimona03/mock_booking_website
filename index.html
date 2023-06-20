@@ -39,18 +39,27 @@
 
     <!-- /************************************ Content *******************************************/ -->
     <main class="content">
-      <section>
-        <div>
+      <section class="search-filters">
+        <div class="section-title">
           <h3>Find a place for your dream vacation</h3>
           <p>Downtown or in a nature</p>
         </div>
-
+        <!-- /************************************ Content -> Search *******************************************/ -->
         <form class="search">
           <div>
             <i class="fa fa-map-marker" aria-hidden="true"></i>
           </div>
-          <input type="search" id="query" name="q" placeholder="Search..." />
-          <button>Search</button>
+          <input
+            type="search"
+            id="searchbar-input"
+            name="location-search"
+            placeholder="Search..."
+            value="Marseille, France"
+          />
+          <button>
+            <i class="fa fa-search fa-lg" aria-hidden="true"></i>
+            <p>Search</p>
+          </button>
         </form>
       </section>
     </main>
