@@ -9,16 +9,20 @@
   --light-blue: #deebff;
   --gray: #f2f2f2;
   --footer-h-desktop: 150px;
+  --header-h: 65px;
 }
 
 body {
+  margin: 0;
   position: relative;
   font-family: "Raleway", sans-serif;
   color: black;
-  height: 100vh;
   max-height: 100%;
-  width: 100vw;
   max-width: 100%;
+  height: auto;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 /************************************ Header and Navbar **********************************************/
@@ -66,27 +70,31 @@ a {
 /************************************ Content *******************************************/
 .content {
   overflow: scroll;
-  height: calc(100% - var(--footer-h-desktop));
+  flex: 1;
+  width: 100%;
+}
+/************************************ Search *******************************************/
+.search {
+  display: flex;
 }
 
 /************************************ Footer *********************************************/
 
 footer {
   background-color: var(--gray);
-  position: absolute;
-  bottom: 0;
   width: 100%;
   height: var(--footer-h-desktop);
   background: var(--gray);
-  font-size: 12px;
+  font-size: 13px;
   display: inline-flex;
   padding: 25px 40px;
   text-align: left;
+  position: relative;
 }
 .footer-col > a {
   font-weight: 700;
   letter-spacing: 0.7px;
-  font-size: 13px;
+  font-size: 15px;
 }
 .footer-under-links {
   opacity: 0.8;
