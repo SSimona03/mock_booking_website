@@ -31,7 +31,26 @@
 
   /*************************************** Content *******************************************/
   .content {
-    background-color: rgb(187, 187, 164);
+  }
+  /*************************************** Content -> Search ********************************/
+
+  .search {
+    position: relative;
+    display: flex;
+  }
+  .fa-search + p {
+    display: none;
+  }
+  .fa-search {
+    display: inline;
+  }
+
+  .search > button {
+    position: absolute;
+    width: 50px;
+    margin-left: 230px;
+    height: 100%;
+    border-radius: 10px;
   }
 
   /*************************************** Footer *********************************************/
