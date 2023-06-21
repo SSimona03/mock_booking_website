@@ -11,18 +11,21 @@
   --footer-h-desktop: 150px;
   --header-h: 65px;
 }
-
+html {
+  max-height: 100%;
+}
 body {
   margin: 0;
   position: relative;
   font-family: "Raleway", sans-serif;
   color: black;
-  max-height: 100%;
-  max-width: 100%;
   height: auto;
+
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+
+  margin-bottom: var(--footer-h-desktop);
 }
 
 /************************************ Header and Navbar **********************************************/
@@ -51,7 +54,6 @@ body {
   padding: 0 12px;
   height: 100%;
   display: flex;
-  justify-content: center;
   align-items: center;
   padding-top: 20px;
 }
@@ -84,15 +86,17 @@ a {
   display: flex;
   height: 40px;
 }
-
-.search > div {
+*:focus {
+  outline: none;
+}
+.location {
   width: 36px;
   border-start-start-radius: 10px 10px;
   border-end-start-radius: 10px 10px;
   background-color: var(--gray);
 }
-.search > div > i {
-  padding: 10px 0 0px 15px;
+.location > i {
+  padding: 10px 0 0px 14px;
 }
 .search > button:hover {
   cursor: pointer;
@@ -112,12 +116,60 @@ a {
   border: solid var(--gray) 1px;
   padding: 0 15px;
   width: 200px;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 15px;
 }
 .fa-search {
   display: none;
 }
+/************************************ Content -> Filter *********************************************/
+.section-filters {
+  display: flex;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+.filter-titile {
+  font-weight: 600;
+  margin: auto 20px auto 0;
+  padding-top: 20px;
+}
+
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-item:hover {
+  cursor: pointer;
+}
+.filter-item {
+  display: flex;
+  position: relative;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.filter-item > i {
+  background-color: var(--light-blue);
+  border-radius: 20px;
+  margin-top: 1px;
+  padding: 11px;
+  position: absolute;
+}
+.child-icon > i {
+  padding: 11px 14px;
+}
+
+.filter-item > p {
+  padding: 9px 20px 9px 50px;
+  border: solid 2px rgba(217, 216, 216, 0.654);
+  min-width: 150px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
 /************************************ Footer *********************************************/
 
 footer {
