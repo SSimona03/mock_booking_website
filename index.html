@@ -2,18 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- viewport for mobiles -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- cdn for font awsome -->
     <link
-      href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       rel="stylesheet"
       type="text/css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
+    <!-- normalize -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -21,9 +32,11 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- css -->
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/styles-table.css" />
     <link rel="stylesheet" href="./css/styles-mobile.css" />
+
     <title>Booki</title>
   </head>
 
@@ -46,8 +59,8 @@
         </div>
         <!-- /************************************ Content -> Search *******************************************/ -->
         <form class="search">
-          <div>
-            <i class="fa fa-map-marker" aria-hidden="true"></i>
+          <div class="location">
+            <i class="fa-solid fa-location-dot"></i>
           </div>
           <input
             type="search"
@@ -62,8 +75,33 @@
           </button>
         </form>
       </section>
-    </main>
+      <!-- /************************************ Content -> Filters *******************************************/ -->
+      <section class="section-filters">
+        <div class="filter-titile">Filters</div>
 
+        <div class="filters-container">
+          <div class="filter-item">
+            <i class="fa fas fa-money-bill-wave" style="color: #0065fc"></i>
+            <p>Low Cost</p>
+          </div>
+          <div class="filter-item">
+            <i class="fa-solid fa-heart" style="color: #0065fc"></i>
+            <p>Romantic</p>
+          </div>
+          <div class="filter-item child-icon">
+            <i class="fas fa-child" style="color: #0065fc"></i>
+            <p>Family-friendly</p>
+          </div>
+
+          <div class="filter-item">
+            <i class="fa-solid fa-dog" style="color: #0065fc"></i>
+            <p>Pets allowed</p>
+          </div>
+        </div>
+      </section>
+      <!-- /************************************ Content -> Info i *******************************************/ -->
+      <section></section>
+    </main>
     <!-- /************************************ Footer *******************************************/ -->
     <footer>
       <div class="footer-col">
