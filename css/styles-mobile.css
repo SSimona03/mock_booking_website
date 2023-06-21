@@ -19,6 +19,7 @@
   }
   #nav-container > a {
     padding-bottom: 13px;
+    justify-content: center;
     margin: 0;
     width: 100%;
     border-bottom: solid var(--gray) 2px;
@@ -26,18 +27,24 @@
   #nav-container > a:hover {
     color: var(--blue);
     border-top: none;
-    border-bottom: solid var(--blue) 3px;
+    border-bottom: solid var(--blue) 5px;
   }
 
   /*************************************** Content *******************************************/
   .content {
+    padding: 20px;
   }
   /*************************************** Content -> Search ********************************/
 
   .search {
     position: relative;
     display: flex;
+    justify-content: center;
   }
+  #searchbar-input {
+    width: 100%;
+  }
+
   .fa-search + p {
     display: none;
   }
@@ -48,7 +55,7 @@
   .search > button {
     position: absolute;
     width: 50px;
-    margin-left: 230px;
+    right: 0;
     height: 100%;
     border-radius: 10px;
   }
