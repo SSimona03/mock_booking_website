@@ -44,6 +44,10 @@
     border-radius: 10px 0px 0px 10px;
     min-width: 200px;
   }
+
+  .popular-img {
+    width: auto;
+  }
   /****************************** -> Accomodations *****************************************/
   .section-accommodations {
     margin: 0 auto;
