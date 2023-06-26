@@ -10,13 +10,58 @@
   .search > button {
   }
 
+  /****************************** Content -> info ****************************************/
+  .section-info > p {
+    width: 100%;
+  }
+  /******************* Content -> Accommodations + Popular *************************************/
+  .section-accommodations-and-popular {
+    flex-direction: column-reverse;
+  }
+  .image-box {
+    display: flex;
+    height: 110px;
+  }
+  /****************************** -> Popular *****************************************/
+  .section-popular {
+    margin: 20px auto;
+    width: 80vw;
+    padding: 0 0 25px 0;
+  }
+  .popular-title-star {
+    padding: 40px 30px 10px 30px;
+  }
+  .section-pop-card-info {
+    margin: 10px auto;
+    width: 60vw;
+    height: 120px;
+  }
+  .section-popular-cards .section-card-text {
+    padding: 2px;
+  }
+
+  .section-pop-card-info img {
+    border-radius: 10px 0px 0px 10px;
+    min-width: 200px;
+  }
+  /****************************** -> Accomodations *****************************************/
+  .section-accommodations {
+    margin: 0 auto;
+    width: 80vw;
+  }
+  .section-accommodations > h3 {
+    text-align: center;
+  }
+  .section-accommodations-cards {
+    width: 70vw;
+    margin: 20px auto;
+  }
   /********************************* Footer **********************************************/
   footer {
     display: flex;
     justify-content: space-evenly;
   }
-  .footer-col {
-  }
+
   .footer-col > a {
     font-size: 15px;
   }
