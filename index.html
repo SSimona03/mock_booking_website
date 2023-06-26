@@ -12,11 +12,12 @@
     />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
       integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -45,21 +46,21 @@
     <header class="header-container">
       <img src="./images/logo/Booki.png" alt="Logo" id="logo" />
       <nav id="nav-container">
-        <a href="#" target="_blank">Accommodation</a>
-        <a href="#" target="_blank">Activities</a>
+        <a href="#accommodations " rel="noopener">Accommodation</a>
+        <a href="#activities" rel="noopener">Activities</a>
       </nav>
     </header>
 
-    <!-- /************************************ Content *******************************************/ -->
+    <!-- /****************************** Content *******************************************/ -->
     <main class="content">
       <section class="search-filters">
         <div class="section-title">
           <h3>Find a place for your dream vacation</h3>
           <p>Downtown or in a nature</p>
         </div>
-        <!-- /************************************ Content -> Search *******************************************/ -->
+        <!-- /************************* Content -> Search *******************************************/ -->
         <form class="search">
-          <div class="location">
+          <div class="search-location">
             <i class="fa-solid fa-location-dot"></i>
           </div>
           <input
@@ -75,9 +76,9 @@
           </button>
         </form>
       </section>
-      <!-- /************************************ Content -> Filters *******************************************/ -->
+      <!-- /************************ Content -> Filters *******************************************/ -->
       <section class="section-filters">
-        <div class="filter-titile">Filters</div>
+        <h4 class="filter-title">Filters</h4>
 
         <div class="filters-container">
           <div class="filter-item">
@@ -99,12 +100,253 @@
           </div>
         </div>
       </section>
-      <!-- /************************************ Content -> Info i *******************************************/ -->
+      <!-- /******************* Content -> Info i *******************************************/ -->
       <section class="section-info">
         <i class="fa-solid fa-info fa-xs" style="color: #0065fc"></i>
         <p>More than 500 accommodations are available in this city</p>
       </section>
+      <!-- /******************* Content -> Accommodations + Popular *************************************/ -->
+      <div class="section-accommodations-and-popular">
+        <!-- /****************************** -> Accommodations ******************************************/ -->
+        <section class="section-accommodations" id="accommodations">
+          <h3>Accommodations in Marseille</h3>
+          <div class="section-accommodations-cards">
+            <!--***** Accommodations -> the cards inside the panel ******-->
+            <div class="section-acc-card-info">
+              <div class="image-box">
+                <img
+                  src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  srcset="
+                    ./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg      1000w,
+                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg     992w,
+                    ./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  768w
+                  "
+                  alt="Image of stayings."
+                />
+              </div>
+              <div class="section-card-text">
+                <h5>Auberge la Cannebière</h5>
+                <p>Night starting at <strong>25€</strong></p>
+                <div class="card-stars">
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #d8d8d8"></i>
+                </div>
+              </div>
+            </div>
+            <div class="section-acc-card-info">
+              <div class="image-box">
+                <img
+                  src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  srcset="
+                    ./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg      1000w,
+                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg     992w,
+                    ./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  768w
+                  "
+                  alt="Image of stayings."
+                />
+              </div>
+              <div class="section-card-text">
+                <h5>Auberge la Cannebière</h5>
+                <p>Night starting at <strong>25€</strong></p>
+                <div class="card-stars">
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #d8d8d8"></i>
+                </div>
+              </div>
+            </div>
+            <div class="section-acc-card-info">
+              <div class="image-box">
+                <img
+                  src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  srcset="
+                    ./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg      1000w,
+                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg     992w,
+                    ./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  768w
+                  "
+                  alt="Image of stayings."
+                />
+              </div>
+              <div class="section-card-text">
+                <h5>Auberge la Cannebière</h5>
+                <p>Night starting at <strong>25€</strong></p>
+                <div class="card-stars">
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #d8d8d8"></i>
+                </div>
+              </div>
+            </div>
+            <div class="section-acc-card-info">
+              <div class="image-box">
+                <img
+                  src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  srcset="
+                    ./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg      1000w,
+                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg     992w,
+                    ./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  768w
+                  "
+                  alt="Image of stayings."
+                />
+              </div>
+              <div class="section-card-text">
+                <h5>Auberge la Cannebière</h5>
+                <p>Night starting at <strong>25€</strong></p>
+                <div class="card-stars">
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #d8d8d8"></i>
+                </div>
+              </div>
+            </div>
+            <div class="section-acc-card-info">
+              <div class="image-box">
+                <img
+                  src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  srcset="
+                    ./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg      1000w,
+                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg     992w,
+                    ./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  768w
+                  "
+                  alt="Image of stayings."
+                />
+              </div>
+              <div class="section-card-text">
+                <h5>Auberge la Cannebière</h5>
+                <p>Night starting at <strong>25€</strong></p>
+                <div class="card-stars">
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #d8d8d8"></i>
+                </div>
+              </div>
+            </div>
+            <div class="section-acc-card-info">
+              <div class="image-box">
+                <img
+                  src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  srcset="
+                    ./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg      1000w,
+                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg     992w,
+                    ./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  768w
+                  "
+                  alt="Image of stayings."
+                />
+              </div>
+              <div class="section-card-text">
+                <h5>Auberge la Cannebière</h5>
+                <p>Night starting at <strong>25€</strong></p>
+                <div class="card-stars">
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #d8d8d8"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h4>Show more</h4>
+        </section>
+
+        <!-- /****************************** -> Popular *******************************************/ -->
+        <section class="section-popular">
+          <div class="popular-title-star">
+            <h3>Most Popular</h3>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="section-popular-cards">
+            <div class="section-pop-card-info">
+              <div class="image-box">
+                <img
+                  src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  srcset="
+                    ./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg      1000w,
+                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg     992w,
+                    ./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  768w
+                  "
+                  alt="Image of stayings."
+                />
+              </div>
+              <div class="section-card-text">
+                <h5>Auberge la Cannebière</h5>
+                <p>Night starting at <strong>25€</strong></p>
+                <div class="card-stars">
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #d8d8d8"></i>
+                </div>
+              </div>
+            </div>
+            <div class="section-pop-card-info">
+              <div class="image-box">
+                <img
+                  src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  srcset="
+                    ./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg      1000w,
+                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg     992w,
+                    ./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  768w
+                  "
+                  alt="Image of stayings."
+                />
+              </div>
+              <div class="section-card-text">
+                <h5>Auberge la Cannebière</h5>
+                <p>Night starting at <strong>25€</strong></p>
+                <div class="card-stars">
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #d8d8d8"></i>
+                </div>
+              </div>
+            </div>
+            <div class="section-pop-card-info">
+              <div class="image-box">
+                <img
+                  src="./images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+                  srcset="
+                    ./images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg      1000w,
+                    ./images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg     992w,
+                    ./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  768w
+                  "
+                  alt="Image of stayings."
+                />
+              </div>
+              <div class="section-card-text">
+                <h5>Auberge la Cannebière</h5>
+                <p>Night starting at <strong>25€</strong></p>
+                <div class="card-stars">
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #0065fc"></i>
+                  <i class="fa-solid fa-star fa-xs" style="color: #d8d8d8"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- /******************* Content -> Activities *************************************/ -->
+      <section id="activities">activities</section>
     </main>
+
     <!-- /************************************ Footer *******************************************/ -->
     <footer>
       <div class="footer-col">
