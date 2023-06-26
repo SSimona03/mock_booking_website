@@ -219,6 +219,13 @@ a {
   margin-top: 20px;
   justify-content: space-between;
 }
+.section-acc-card-info:hover {
+  cursor: pointer;
+}
+.section-acc-card-info:hover .section-card-text strong {
+  cursor: pointer;
+  color: var(--blue);
+}
 .section-acc-card-info {
   display: flex;
   background-color: white;
@@ -268,6 +275,13 @@ a {
   display: flex;
   flex-direction: column;
 }
+.section-pop-card-info:hover {
+  cursor: pointer;
+}
+.section-pop-card-info:hover .section-card-text strong {
+  cursor: pointer;
+  color: var(--blue);
+}
 .section-pop-card-info {
   width: 100%;
   display: flex;
@@ -287,6 +301,10 @@ a {
 .section-pop-card-info img {
   border-radius: 10px 0px 0px 10px;
   max-width: 130px;
+}
+
+.popular-img {
+  min-width: 120px;
 }
 /***************************** Content -> Activities *********************************************/
 #activities {
