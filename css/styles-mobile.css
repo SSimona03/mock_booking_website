@@ -77,15 +77,29 @@
   /****************************** -> Popular *****************************************/
   .section-popular {
     margin: 10px auto;
-    width: 100vw;
+    width: 100%;
     border-radius: 0px;
+    background-color: var(--gray);
+    padding: 30px 10px;
   }
-  .section-pop-card-info {
-    margin: 10px auto;
-    width: 90vw;
+  .section-popular-cards {
+    flex-direction: column;
+    overflow: hidden;
   }
 
-  .section-popular-cards .section-card-text {
+  .popular-title-star {
+    margin: auto;
+    width: 360px;
+    padding-bottom: 20px;
+  }
+
+  .section-pop-card-info {
+    margin: 10px auto;
+    max-width: 370px;
+    display: flex;
+  }
+
+  .section-card-text {
     padding: 2px;
     justify-content: space-between;
     margin-left: 15px;
@@ -93,16 +107,22 @@
 
   .section-pop-card-info img {
     border-radius: 10px 0px 0px 10px;
+    width: 100%;
+    object-fit: fill;
   }
   /****************************** -> Accomodations *****************************************/
   .section-accommodations {
     margin: 10px auto;
-    width: 100vw;
+    max-width: 100%;
     background-color: white;
+  }
+
+  .section-accommodations > h4 {
+    text-align: left;
   }
   .section-accommodations-cards {
     flex-direction: column;
-    width: 100%;
+    max-width: 410px;
   }
   .section-acc-card-info {
     width: 100%;
@@ -110,6 +130,7 @@
     /* offset-x | offset-y | blur-radius | color */
     box-shadow: 0px 5px 5px rgb(225, 222, 222);
   }
+
   .image-box > img {
     width: 100%;
     object-fit: cover;
