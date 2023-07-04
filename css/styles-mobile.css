@@ -121,6 +121,9 @@
     width: 380px;
   }
 
+  .section-accommodations > h3 {
+    text-align: center;
+  }
   .section-accommodations-cards {
     flex-direction: column;
     max-width: 410px;
@@ -145,7 +148,7 @@
     width: 100%;
   }
   #activities > h3 {
-    padding: 0;
+    text-align: center;
   }
 
   .section-activities-cards {
@@ -166,7 +169,7 @@
     margin-bottom: 20px;
   }
 
-  .section-activities-one-img > img {
+  .section-activities-one-img img {
     width: 100%;
     height: 110px;
   }
@@ -178,19 +181,21 @@
     height: 100%;
   }
 
-  .section-activities-two-img-top,
-  .section-activities-two-img-bottom {
+  .section-activities-two-img-large,
+  .section-activities-two-img-small {
     max-width: unset;
     margin: 0;
     margin-bottom: 20px;
   }
-  .section-activities-two-img-top > img,
-  .section-activities-two-img-bottom > img {
+  .section-activities-two-img-large img,
+  .section-activities-two-img-small img {
     height: 110px;
   }
   /*************************************** Footer *********************************************/
   footer {
     height: 100%;
+  }
+  .container-footer {
     display: flex;
     flex-direction: column;
     font-size: 14px;
