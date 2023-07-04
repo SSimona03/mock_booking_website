@@ -221,7 +221,8 @@ a {
 .section-acc-card-info:hover {
   cursor: pointer;
 }
-.section-acc-card-info:hover .section-card-text strong {
+.section-acc-card-info:hover .section-card-text strong,
+.section-accommodations > h4:hover {
   cursor: pointer;
   color: var(--blue);
 }
@@ -248,6 +249,7 @@ a {
   opacity: 0.7;
   font-size: 13.5px;
 }
+
 .image-box {
   display: flex;
   height: 120px;
@@ -271,6 +273,9 @@ a {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+}
+.popular-title-star > i:hover {
+  cursor: pointer;
 }
 
 .section-popular-cards {

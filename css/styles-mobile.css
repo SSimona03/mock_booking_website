@@ -21,13 +21,14 @@
     padding-bottom: 13px;
     justify-content: center;
     margin: 0;
+    border: white 3px;
     width: 100%;
-    border-bottom: solid var(--gray) 2px;
+    border-bottom: solid var(--gray) 3px;
   }
   #nav-container > a:hover {
     color: var(--blue);
     border-top: none;
-    border-bottom: solid var(--blue) 5px;
+    border-bottom: solid var(--blue) 2px;
   }
 
   /*************************************** Content *******************************************/
@@ -73,7 +74,7 @@
     flex-direction: column-reverse;
     overflow: hidden;
     margin: 0 auto;
-    width: 380px;
+    width: 100%;
   }
 
   /****************************** -> Popular *****************************************/
@@ -117,6 +118,7 @@
     margin: 10px auto;
     width: 100%;
     background-color: white;
+    width: 380px;
   }
 
   .section-accommodations-cards {
