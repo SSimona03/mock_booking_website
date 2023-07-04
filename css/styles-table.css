@@ -49,7 +49,12 @@
   .section-acc-card-info {
     width: 290px;
   }
+  /***************************** Content -> Activities *********************************************/
+  /******************* Activities > Two Images Box *************/
 
+  .section-activities-two-img h5 {
+    padding: 5px 10px;
+  }
   /********************************* Footer **********************************************/
   footer {
     display: flex;
