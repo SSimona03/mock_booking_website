@@ -6,7 +6,9 @@
   /******************* Content -> Accommodations + Popular *************************************/
   .section-accommodations-and-popular {
     flex-direction: column-reverse;
-    max-width: 100%;
+
+    margin: auto;
+    width: 700px;
   }
   .image-box {
     display: flex;
@@ -34,7 +36,7 @@
   /****************************** -> Accomodations *****************************************/
   .section-accommodations {
     margin: 0 auto;
-    width: 700px;
+    width: 100%;
   }
   .section-accommodations > h3,
   .section-accommodations > h4 {

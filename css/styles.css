@@ -312,7 +312,16 @@ a {
 .popular-img {
   width: 200px;
 }
+
 /***************************** Content -> Activities *********************************************/
+.section-popular {
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none; /* Firefox */
+}
+.section-popular::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+/************ -> Popular  hide scroll bar ***************************/
 #activities {
   margin: 50px 0 20px 0;
   width: 100%;
