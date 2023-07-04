@@ -68,10 +68,12 @@
   }
 
   /******************* Content -> Accommodations + Popular *************************************/
+
   .section-accommodations-and-popular {
     flex-direction: column-reverse;
     overflow: hidden;
-    margin: 0;
+    margin: 0 auto;
+    width: 380px;
   }
 
   /****************************** -> Popular *****************************************/
@@ -113,13 +115,10 @@
   /****************************** -> Accomodations *****************************************/
   .section-accommodations {
     margin: 10px auto;
-    max-width: 100%;
+    width: 100%;
     background-color: white;
   }
 
-  .section-accommodations > h4 {
-    text-align: left;
-  }
   .section-accommodations-cards {
     flex-direction: column;
     max-width: 410px;
@@ -132,10 +131,61 @@
   }
 
   .image-box > img {
-    width: 100%;
+    max-width: 100%;
     object-fit: cover;
   }
+  /***************************** Content -> Activities *********************************************/
+  #activities {
+    margin: 50px auto;
+    height: 100%;
+    max-width: 410px;
+    padding: 10px 10px;
+    width: 100%;
+  }
+  #activities > h3 {
+    padding: 0;
+  }
 
+  .section-activities-cards {
+    flex-direction: column;
+    overflow: hidden;
+    max-width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .section-activities-cards h5 {
+    padding: 20px;
+  }
+  /******************* Activities > one Image Box *************/
+  .section-activities-one-img {
+    max-width: 95%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .section-activities-one-img > img {
+    width: 100%;
+    height: 110px;
+  }
+  /******************* Activities > Two Images Box *************/
+
+  .section-activities-two-img {
+    max-width: 95%;
+    margin: 0;
+    height: 100%;
+  }
+
+  .section-activities-two-img-top,
+  .section-activities-two-img-bottom {
+    max-width: unset;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .section-activities-two-img-top > img,
+  .section-activities-two-img-bottom > img {
+    height: 110px;
+  }
   /*************************************** Footer *********************************************/
   footer {
     height: 100%;
