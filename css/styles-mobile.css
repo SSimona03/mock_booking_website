@@ -53,7 +53,7 @@
     width: 100%;
   }
 
-  .fa-search + p {
+  .fa-search + span {
     display: none;
   }
   .fa-search {

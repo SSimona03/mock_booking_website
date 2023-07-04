@@ -1,6 +1,6 @@
 @media screen and (max-width: 992px) {
   /****************************** Content -> info ****************************************/
-  .section-info > p {
+  .div-info > p {
     width: 100%;
   }
   /******************* Content -> Accommodations + Popular *************************************/
