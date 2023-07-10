@@ -1,7 +1,7 @@
 @media screen and (max-width: 768px) {
   /******************************** Header and Navbar  *********************************/
   .header-container {
-    flex-direction: column;
+    flex-direction: column; /*** to have the navitation under logo ***/
     margin: 0;
     padding: 0;
   }
@@ -25,6 +25,7 @@
     width: 100%;
     border-bottom: solid var(--gray) 3px;
   }
+  /*** to appear the blue border on bottom ****/
   #nav-container > a:hover {
     color: var(--blue);
     border-top: none;
@@ -49,17 +50,19 @@
     display: flex;
     justify-content: center;
   }
+  /*** full width ***/
   #searchbar-input {
     width: 100%;
   }
 
+  /*** remote the Search text ***/
   .fa-search + span {
     display: none;
   }
   .fa-search {
     display: inline;
   }
-
+  /*** to style the search button to go over the searchbar ***/
   .search > button {
     position: absolute;
     width: 50px;
@@ -71,7 +74,6 @@
   /******************* Content -> Accommodations + Popular *************************************/
 
   .section-accommodations-and-popular {
-    flex-direction: column-reverse;
     overflow: hidden;
     margin: 0 auto;
     width: 100%;
@@ -85,6 +87,7 @@
     background-color: var(--gray);
     padding: 30px 10px;
   }
+  /* to made the cards unscroll */
   .section-popular-cards {
     flex-direction: column;
     overflow: hidden;
@@ -193,7 +196,7 @@
   }
   /*************************************** Footer *********************************************/
   footer {
-    height: 100%;
+    height: 100%; //to keep the colour
   }
   .container-footer {
     display: flex;

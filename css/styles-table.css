@@ -5,8 +5,8 @@
   }
   /******************* Content -> Accommodations + Popular *************************************/
   .section-accommodations-and-popular {
+    /*** to have the popular before accommodations ***/
     flex-direction: column-reverse;
-
     margin: auto;
     width: 700px;
   }
@@ -22,6 +22,7 @@
     padding: 0 0 25px 0;
     background-color: white;
   }
+  /* to made the cards scroll */
   .section-popular-cards {
     flex-direction: row;
     overflow: scroll;

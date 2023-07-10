@@ -70,7 +70,7 @@
             placeholder="Search..."
             value="Marseille, France"
           />
-          <button>
+          <button onCLick=" ">
             <i class="fa fa-search fa-lg" aria-hidden="true"></i>
             <span>Search</span>
           </button>
@@ -82,23 +82,25 @@
         <h4 class="filter-title">Filters</h4>
 
         <div class="filters-container">
-          <div class="filter-item">
+          <!-- added inside a div all the filters to style them more easly  --->
+
+          <a href="#" class="filter-item">
             <i class="fa fas fa-money-bill-wave" style="color: #0065fc"></i>
             <p>Low Cost</p>
-          </div>
-          <div class="filter-item">
+          </a>
+          <a href="#" class="filter-item">
             <i class="fa-solid fa-heart" style="color: #0065fc"></i>
             <p>Romantic</p>
-          </div>
-          <div class="filter-item child-icon">
+          </a>
+          <a href="#" class="filter-item child-icon">
             <i class="fas fa-child" style="color: #0065fc"></i>
             <p>Family-friendly</p>
-          </div>
+          </a>
 
-          <div class="filter-item">
+          <a href="#" class="filter-item">
             <i class="fa-solid fa-dog" style="color: #0065fc"></i>
             <p>Pets allowed</p>
-          </div>
+          </a>
         </div>
       </section>
 
@@ -370,7 +372,7 @@
               </a>
             </div>
           </div>
-          <h4>Show more</h4>
+          <h4><a href="#">Show more</a></h4>
         </section>
 
         <!-- /****************************** -> Popular *******************************************/ -->
@@ -379,6 +381,7 @@
             <h3>Most Popular</h3>
             <i class="fa-solid fa-star"></i>
           </div>
+
           <div class="section-popular-cards">
             <a href="#">
               <div class="section-pop-card-info">

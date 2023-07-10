@@ -47,7 +47,7 @@ body {
 }
 
 #nav-container {
-  position: absolute;
+  position: absolute; /*** helps to keep the top border on top ***/
   right: 40px;
   width: 250px;
   display: flex;
@@ -68,6 +68,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
+/*** to appear the blue border on top ***/
 #nav-container > a:hover {
   color: var(--blue);
   border-top: solid var(--blue) 3px;
@@ -92,12 +93,14 @@ a {
 *:focus {
   outline: none;
 }
+/*** fix width ***/
 .search-location {
   width: 36px;
   border-start-start-radius: 10px 10px;
   border-end-start-radius: 10px 10px;
   background-color: var(--gray);
 }
+/*** icon style ***/
 .search-location > i {
   padding: 10px 0 0px 14px;
 }
@@ -122,6 +125,7 @@ a {
   font-weight: 600;
   font-size: 15px;
 }
+/*** an icon for mobile only ***/
 .fa-search {
   display: none;
 }
@@ -139,17 +143,14 @@ a {
 
 .filters-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*** for when the screen gets smaller ***/
 }
 
-.filter-item:hover {
-  cursor: pointer;
-}
 .filter-item:hover,
 .filter-item > p:hover {
-  cursor: pointer;
   color: var(--blue);
 }
+
 .filter-item {
   display: flex;
   position: relative;
@@ -229,6 +230,9 @@ a {
 .section-acc-card-info:hover .section-card-text strong,
 .section-accommodations > h4:hover {
   color: var(--blue);
+}
+.section-accommodations > h4 {
+  width: 90px;
 }
 .section-acc-card-info {
   display: flex;
