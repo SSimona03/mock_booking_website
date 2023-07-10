@@ -413,6 +413,7 @@ footer {
   font-size: 13px;
   margin: 0 auto;
   display: flex;
+  /*** optional by default will be row ** *display as row ***/
   flex-direction: row;
   padding: 25px 40px;
   text-align: left;

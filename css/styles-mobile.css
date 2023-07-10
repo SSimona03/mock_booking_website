@@ -196,10 +196,11 @@
   }
   /*************************************** Footer *********************************************/
   footer {
-    height: 100%; //to keep the colour
+    height: 100%; //to keep the colour full width
   }
   .container-footer {
     display: flex;
+    /*** display as columns ***/
     flex-direction: column;
     font-size: 14px;
   }
