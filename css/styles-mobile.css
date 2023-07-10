@@ -167,7 +167,7 @@
   }
   /******************* Activities > one Image Box *************/
   .section-activities-one-img {
-    max-width: 95%;
+    max-width: 87%;
     margin: 0;
     margin-bottom: 20px;
   }
@@ -179,7 +179,7 @@
   /******************* Activities > Two Images Box *************/
 
   .section-activities-two-img {
-    max-width: 95%;
+    max-width: 87%;
     margin: 0;
     height: 100%;
   }
