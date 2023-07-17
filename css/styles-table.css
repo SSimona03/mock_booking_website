@@ -3,6 +3,10 @@
   .div-info > p {
     width: 100%;
   }
+
+  input {
+    border-radius: 0;
+  }
   /******************* Content -> Accommodations + Popular *************************************/
   .section-accommodations-and-popular {
     /*** to have the popular before accommodations ***/
