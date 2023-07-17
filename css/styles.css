@@ -21,6 +21,7 @@ body {
   display: flex;
   min-height: 100vh; /* pushes the footer to the bottom*/
   flex-direction: column;
+  max-width: 100%;
 }
 
 .contain-size {
