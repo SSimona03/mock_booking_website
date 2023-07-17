@@ -42,6 +42,13 @@
     margin-right: 20px;
   }
   /*************************************** Content -> Search ********************************/
+  textarea,
+  input[type="search"],
+  input[type="button"],
+  input[type="submit"] {
+    border-radius: 0px;
+    -webkit-border-radius: 0;
+  }
   .search-filters {
     margin: 0 20px;
   }

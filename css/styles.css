@@ -132,11 +132,13 @@ a {
 }
 
 textarea,
-input[type="text"],
+input[type="search"],
 input[type="button"],
 input[type="submit"] {
+  border-radius: 0px;
+  -webkit-border-radius: 0;
   -webkit-appearance: none;
-  border-radius: 0;
+  background-color: white;
 }
 /******************************** Content -> Filter ****************************************/
 .section-filters {
