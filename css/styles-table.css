@@ -5,7 +5,7 @@
   }
 
   input {
-    border-radius: 0;
+    --webkit-border-radius: 0px;
   }
   /******************* Content -> Accommodations + Popular *************************************/
   .section-accommodations-and-popular {
